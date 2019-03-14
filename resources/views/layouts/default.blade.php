@@ -155,8 +155,8 @@ desired effect
       
         
 
-        <!--<li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Especies</span>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-link"></i> <span>Pacientes</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
@@ -165,7 +165,7 @@ desired effect
             <li><a href="#">Lista</a></li>
             <li><a href="#">Agregar</a></li>
           </ul>
-        </li>-->
+        </li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>
