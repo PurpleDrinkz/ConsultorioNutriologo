@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Mar 14, 2019 at 07:48 PM
+-- Generation Time: Mar 21, 2019 at 01:44 AM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
 
@@ -44,8 +44,18 @@ CREATE TABLE `pacientes` (
   `id` int(11) NOT NULL,
   `nombre` varchar(255) NOT NULL,
   `apellidos` varchar(255) NOT NULL,
-  `nacimiento` datetime NOT NULL
+  `nacimiento` datetime NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `pacientes`
+--
+
+INSERT INTO `pacientes` (`id`, `nombre`, `apellidos`, `nacimiento`, `created_at`, `updated_at`) VALUES
+(1, 'Jesus', 'López', '1996-08-12 00:00:00', '2019-03-21 01:27:25', '2019-03-21 01:27:25'),
+(2, 'Matilda', 'Zopota', '1955-03-11 00:00:00', '2019-03-21 01:27:25', '2019-03-21 01:27:25');
 
 -- --------------------------------------------------------
 
@@ -158,7 +168,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `pacientes`
 --
 ALTER TABLE `pacientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tipos_usuario`

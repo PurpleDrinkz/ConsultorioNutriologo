@@ -31,4 +31,7 @@ Route::put('/perfil/{id}','PerfilController@update')
 
 Auth::routes(['register' => false]);
 
+Route::resource('pacientes','PacienteController');
+
+
 

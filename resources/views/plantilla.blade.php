@@ -1,7 +1,7 @@
 @extends('layouts.default')
-@section('titulo_pagina','Mascotas | Dashboard')
-@section('titulo','Mascotas')
-@section('subtitulo','Dashboard')
+@section('titulo_pagina','Nutriologo | Seccion')
+@section('titulo','Nutriologo')
+@section('subtitulo','Seccion')
 @section('contenido')
 <div class="row">
     <div class="col-md-12">
